@@ -38,27 +38,27 @@ if(scoreRightWrist > 0.2)
     if(rightWristY >0 && rightWristY <= 100)
     {
         document.getElementById("speed").innerHTML = "Velocidade = 0.5px";
-        song.rate(0.5);
+        som.rate(0.5);
     }
     else if(rightWristY >100 && rightWristY <= 200)
     {
         document.getElementById("speed").innerHTML = "Velocidade = 1px";
-        song.rate(1);
+        som.rate(1);
     }
     else if(rightWristY >200 && rightWristY <= 300)
     {
         document.getElementById("speed").innerHTML = "Velocidade = 1.5px";
-        song.rate(1.5);
+        som.rate(1.5);
     }
     else if(rightWristY >300 && rightWristY <= 400)
     {
         document.getElementById("speed").innerHTML = "Velocidade = 2px";
-        song.rate(2);
+        som.rate(2);
     }
     else if(rightWristY >400)
     {
         document.getElementById("speed").innerHTML = "Velocidade = 2.5px";
-        song.rate(2.5);
+        som.rate(2.5);
     }
 }
 if(scoreLeftWrist>0.2)
@@ -78,8 +78,8 @@ function modelLoaded()
 function iniciar()
 {
     som.play();
-    song.setVolume(1);
-    song.rate(1);
+    som.setVolume(1);
+    som.rate(1);
 }
 function gotPoses(results)
 {
